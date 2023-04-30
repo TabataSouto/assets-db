@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prestart": "env $(cat .env) npx sequelize db:create && env $(cat .env) npx sequelize db:migrate && env $(cat .env) npx sequelize db:seed:all",
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
