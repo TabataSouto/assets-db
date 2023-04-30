@@ -1,0 +1,27 @@
+{
+  "name": "assets-db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "env $(cat .env) npx sequelize db:create && env $(cat .env) npx sequelize db:migrate && env $(cat .env) npx sequelize db:seed:all",
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "4.17.3",
+    "express-async-errors": "^3.1.1",
+    "mysql2": "2.1.0",
+    "pg": "^8.10.0",
+    "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15",
+    "sequelize-cli": "6.2.0"
+  }
+}
