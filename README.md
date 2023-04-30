@@ -45,7 +45,7 @@ npm run dev
 Concluído
 
 # 💽 Deploy
-O Deploy deste projeto foi realizado no [Vercel](COLOCAR LINK AQUI).
+O Deploy deste projeto foi realizado no [Cyclic](https://gifted-gabardine-goat.cyclic.app/assets).
 
 # 📚 Aprendizados:
 Inicialmente o deploy foi feito via Heroku, mas com a mudança da plataforme aprendy a realizar deploy de back-end também pelo vercel.
